@@ -1,0 +1,92 @@
+/* Start main Section */
+
+main{
+    padding-top:20px;
+    grid-area: ct;
+}
+
+
+main .plogs{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    justify-content: center;
+    grid-auto-rows: 300px;
+    gap: 20px 10px;
+}
+
+
+main .plogs .card{
+    display: grid;
+    grid-template-areas: "img img img img img img img img img"
+                        "title title title title title title title title cat"
+                        "date date date date date . . . ."
+                        "desc desc desc desc desc desc desc desc desc"
+                        "more more more more more more more more more";
+    justify-content: space-around;
+    align-items:center;
+    row-gap: 10px;
+    border:3px solid #007bff2e;
+    padding:15px;
+}
+
+
+main .plogs .card .top{
+    grid-area:img;
+    height: 100%;
+}
+
+
+main .plogs .card .top img{
+    width:100%;
+    height:100%;
+}
+
+
+main .plogs .card .category{
+    grid-area: cat;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color:#224269;
+    background-color: lightgreen;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+main .plogs .card .title{
+    grid-area: title;
+    font-size: 18px;
+    font-weight: 550;
+    
+}
+
+
+main .plogs .card .date{
+    grid-area: date;
+    color:#999;
+}
+
+
+main .plogs .card .desc{
+    grid-area: desc;
+    height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+main .plogs .card .cont-reading{
+    grid-area: more;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+main .plogs .card .cont-reading:hover{
+    text-decoration: underline;
+}
+/* End main Section */

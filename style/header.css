@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: "hd hd hd hd hd hd hd hd"
+    "ct ct ct ct ct ct ct ct"
+    "ft ft ft ft ft ft ft ft";
+}
+
+/* Start Header Section */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #224269;
+    height: 50px;
+    padding:0 20px;
+    color:#FFF;
+    border-radius: 5px 5px;
+    grid-area: hd;
+}
+
+
+header .logo{
+    display: flex;
+}
+
+
+header .logo h1{
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+
+header .search{
+    display: flex;
+    align-items: center;
+}
+
+
+header .search form input,button{
+    padding:3px;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+}
+
+
+header .search form input:focus{
+    box-shadow: 1px 1px 2px rgba(51, 52, 55, 0.5);
+}
+
+
+header nav{
+    display: flex;
+}
+
+
+header nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+header nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+
+header nav ul a{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    padding:10px;
+}
+
+
+header nav ul a:hover{
+    background-color: #252c3480;
+    border-radius: 5px;
+}
+/* Start Header Section */

@@ -1,0 +1,19 @@
+.container{
+    display:grid;
+    grid-template-areas: "hd hd hd hd hd hd hd hd"
+                        "ct ct ct ct ct ct sb sb"
+                        "ft ft ft ft ft ft ft ft";
+}
+
+
+@media (max-width:700px){
+
+    .container{
+        display:grid;
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+                            "ct ct ct ct ct ct ct ct"
+                            "sb sb sb sb sb sb sb sb"
+                            "ft ft ft ft ft ft ft ft";
+    }
+
+}
